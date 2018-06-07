@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="ExperimentalPlayer.exe" version="1.0.0.0" publicKeyToken="37a1797a363efa4f" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ExperimentalPlayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ExperimentalPlayer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="61440">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7T36NhN5KvQ6OQNPq1K57LhUEfc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExperimentalPlayer.exe" size="190976">
+      <assemblyIdentity name="ExperimentalPlayer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>g48xWYd9uA0VsQ2jjDLNEUUGawo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="331776">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+Iy/iQpIGunNsnXNCcXwZAs5co4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ExperimentalPlayer.exe.config" size="2412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>ESLHC/4O16yhZuwmMADaGSBHg48=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Waretus-Mursu11\Joonas" issuerKeyHash="4f8ca85bd66771d36fab21c62b491ce6478d3b77" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>4kwSeURzW/JeiMek8rm/aRvLI2g=</DigestValue></Reference></SignedInfo><SignatureValue>M08krnz+ggnVW3NtB95BawL28sDy1wwUFB4HSaaGIr7MaeNIdKy0qfKoUkCeCsfLVk2pjI4MnM+kGtHiMw40iy+6RJcPBhM8BOeXdykleoeqKcmxUYbypYEYE31Oa0bbVz+T5xFMUkVn2u78UL59bcsa58tIE5M7rxOHvPFUAWY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>/HgfuF2NglOIlt1Y+fW/ZF7vXlLkyozizFgu0wApctO9dbZoPYBhCKxK7cgL9abL8eHQUqUtme42CX2o5N/PsCRQ2vASU2DJhmCxhejVCTxEfJpDmtdtDwsEDrvqeER2v1mXZPc2BjZF6s5SYAekwNsqXmRPqZ/f/Acr3EuIgMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6823cb1b69bfb9f2a4c7885ef25b734479124ce2" Description="" Url=""><as:assemblyIdentity name="ExperimentalPlayer.exe" version="1.0.0.0" publicKeyToken="37a1797a363efa4f" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Waretus-Mursu11\Joonas</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fg/yV0kMfsiKzTIKfY6pHMCC9I4=</DigestValue></Reference></SignedInfo><SignatureValue>V/1h4lpwJtzarrMtiyKmse7SXSvts1pnwzT4Q1y8UZNupd4CFfkBuhfFsAKkgBPGk/vXke8vYrzoErSM09ho/hDhMapNrd5eELrwiXkoAm4OermxDxYisCGYNvpPNaftC1I7s5blWURrBtMA/I/KSY8ocLsaCqDdzkGYvKkbCYI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>/HgfuF2NglOIlt1Y+fW/ZF7vXlLkyozizFgu0wApctO9dbZoPYBhCKxK7cgL9abL8eHQUqUtme42CX2o5N/PsCRQ2vASU2DJhmCxhejVCTxEfJpDmtdtDwsEDrvqeER2v1mXZPc2BjZF6s5SYAekwNsqXmRPqZ/f/Acr3EuIgMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQ3vZeZnOmNKZPUlD4+UBJlTANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwAVwBhAHIAZQB0AHUAcwAtAE0AdQByAHMAdQAxADEAXABKAG8AbwBuAGEAczAeFw0wOTAzMjkxNjM1NDhaFw0xMDAzMjkyMjM1NDhaMDcxNTAzBgNVBAMeLABXAGEAcgBlAHQAdQBzAC0ATQB1AHIAcwB1ADEAMQBcAEoAbwBvAG4AYQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD8eB+4XY2CU4iW3Vj59b9kXu9eUuTKjOLMWC7TACly0711tmg9gGEIrErtyAv1psvx4dBSpS2Z7jYJfajk38+wJFDa8BJTYMmGYLGF6NUJPER8mkOa120PCwQOu+p4RHa/WZdk9zYGNkXqzlJgB6TA2ypeZE+pn9/8ByvcS4iAyQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHvMfGbH9OI3H3yTd+5FnQ96bblcojSu0Y4Tbm1V5FDHcBwuaosSnPuxhiC5L/8Zpf1VQo0eJ0SgDaWFR5nfn4Lsbsf/IVrZWU/UbmhS9yHs7HRt5ATjejaZlxN+nHYSw2yg8uoZag1ExUSaibRofp/XkcKslZgzjcJDR1jBZE+5</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

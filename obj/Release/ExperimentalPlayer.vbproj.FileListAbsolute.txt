@@ -1,0 +1,86 @@
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Interop.WMPLib.dll
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\AxInterop.WMPLib.dll
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ResolveAssemblyReference.cache
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\Interop.WMPLib.dll
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\AxInterop.WMPLib.dll
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.ResolveComReference.cache
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Form1.resources
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Resources.resources
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.GenerateResource.Cache
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.help.resources
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.exe.config
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\Interop.WMPLib.dll
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.ResolveComReference.cache
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.exe
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.xml
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.pdb
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.exe
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.pdb
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.xml
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Interop.WMPLib.dll
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Form1.resources
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.help.resources
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Resources.resources
+C:\Users\Public\Documents\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.GenerateResource.Cache
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.exe.config
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.exe.manifest
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.application
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.exe
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ResolveAssemblyReference.cache
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\Interop.WMPLib.dll
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\AxInterop.WMPLib.dll
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.ResolveComReference.cache
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Form1.resources
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.help.resources
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Resources.resources
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.GenerateResource.Cache
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.exe.manifest
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.application
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.exe
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.xml
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.pdb
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.pdb
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\ExperimentalPlayer.xml
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Interop.WMPLib.dll
+F:\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\AxInterop.WMPLib.dll
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.AboutBox.resources
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Resources\jplayer_help.rtf
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe.config
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe.manifest
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.application
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.pdb
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.xml
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe.licenses
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.TrustInfo.xml
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe.manifest
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.application
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.xml
+E:\Koodaus\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.pdb
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Resources\jplayer_help.rtf
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe.config
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe.manifest
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.application
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.exe
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.pdb
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\JPlayer.xml
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\AxInterop.WMPLib.dll
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\bin\Release\Interop.WMPLib.dll
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbprojResolveAssemblyReference.cache
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.AboutBox.resources
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Form1.resources
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.help.resources
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.Resources.resources
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.GenerateResource.Cache
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe.licenses
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\ExperimentalPlayer.vbproj.CoreCompileInputs.cache
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.TrustInfo.xml
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe.manifest
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.application
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.exe
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.xml
+C:\_CS\Microsoft.mshtml-SHDocVw\JPlayer 1.6\MPlayer\ExperimentalPlayer\ExperimentalPlayer\obj\Release\JPlayer.pdb

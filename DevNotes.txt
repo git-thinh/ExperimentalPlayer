@@ -1,0 +1,171 @@
+﻿Kehittäjän muistio
+
+Tämä muistio on tehty sitä varten jos joskus julkaisen tämän koodin jossain. Silloin se tarkoittaa, että sitä saa vapaasti muokata ja levittää.
+Mutta minut on pakko mainita silloin siinä ohjelmassa jossain.
+
+Ohjelman nimi: JPlayer (tulee Juunas Playeristä)
+Ohjelman teko aloitettu: 25.3.09
+Tekijä: Joonas Westlin (joonas_westlin@hotmail.com)
+
+Vähän tietoa ohjelman toiminnasta:
+
+Biisejä säilytetään periaatteessa kahdessa taulukossa koko ajan (songs = List(Of String), playlist.items = Collection) , songs-lista sisältää 
+kaikkien koko tiedostopolut, soittolista puolestaan vain tiedostonimet.
+
+Ohjelmalla kestää aina aluksi aloittaa soittaminen. Tämä johtuu WMP-kontrollista, ei omasta ohjelmastani. Sen pitäisi olla vähän nopeampi nyt.
+Lisäsin player.Init() Form1_Loadiin.
+
+.JPL-tiedostot (Juunas PlayList)
+Tämä tiedosto on itse kehittämäni playlist-tiedostoformaatti, jonka sisältö on hämmästyttävän yksinkertainen. Tässä on esimerkki 
+.jpl-tiedoston sisällöstä:
+//alkaa
+E:\Downloads\MP3\Ultimate metal\Stratovarius - Paradise.mp3
+E:\Downloads\MP3\Apulanta - Pahempi Toistaan.mp3
+E:\Downloads\MP3\Bang Bang.mp3
+
+//loppuu
+Ja kuten huomaat, se sisältää yhden turhan rivinvaihdon lopussa. Tämä johtuu StreamWriterin WriteLine-funktiosta (Se kirjoittaa AINA 
+rivinvaihdon tekstin jälkeen). Eikä se sitä paitsi haittaa mitään. Ja tietenkään noita kommentteja ei siellä tiedostossa ole.
+M3U-soittolistatkaan eivät kauheasti eroa tästä kuitenkaan. Ja .jpl-tiedostoja VOI muokata käsin, mikäs siinä. Mutta ei ole minun vikani jos 
+ohjelma sitten kaatuu. En yleensä hirveästi jaksa suojata koodiani idiooteilta. Ja nämä tiedostothan eivät ole siirreltäviä, ilmiselvistä 
+syistä... Saatan jossain välissä tehdä "Tee siirreltävä soittolista"-painikkeen jonnekin, joka laittaa tiedostoon vain tiedostonimet (#TEHTY#).
+Jolloin musatiedostojen pitää tietenkin olla samassa kansiossa. Soittolistat on nyt suojattu siten, että ohjelma ei voi kaatua, jos jokin
+biisi on siirretty/poistettu (liittyen käynnistyksessä ladattavaan PL:ään).
+
+Vähän shufflen toiminnasta: Elikkä kun shuffle on päällä, seuraava biisi arvotaan satunnaisesti. Ohjelma kuitenkaan ei muista arvottuja biisejä
+(Se saattaa arpoa saman biisin heti jonkun toisen jälkeen). Sama biisi ei kuitenkaan käynnisty shufflessa. Painamalla Toista-nappia 
+shuffle-tilassa, ohjelma arpoo uuden biisin.
+
+Label3 ja Label4 ovat testaukseen tarkoitettuja ulostuloja. Niillä voi esim. seurata muuttujien arvoja. Ne ovat tavallisesti piilossa.
+
+
+
+/***************BLOGI**************
+
+Jooh, ja vähän historiaa tähän väliin.
+
+/*VANHAA TIETOA
+Ja vähän lisää playlisteistä. Ohjelma lataa edellisen TALLENNETUN playlistin aina. Jos siis esim. tallennuksen jälkeen vielä poistat/lisäät
+biisejä, se lataa vanhan playlistin kuitenkin seuraavalla käynnistyskerralla. Tämä sen takia, koska yhden tiedoston muistaminen on helpompaa
+kuin 200:n biisin muistaminen. Ja sitten jos tyhjennät playlistin, ohjelma ei lataa mitään playlistiä seuraavalla käynnistyskerralla (paitsi
+tietenkin jos lataat/tallennat uuden PL:n). Tämän jutun pointti on, että kun ekan kerran lisäät biisejä ohjelmaan, muista tallentaa PL ennen 
+sulkemista, muuten joudut lisäämään ne uudestaan.
+*/VANHAA TIETOA 'Niin, nyt näin ei tarvitse tehdä.
+
+Koko projekti alkoi ihan sillä kun päätin huvin vuoksi testata tuota WMP-kontrollia. Sitten löysin pari tutorialia sen käytöstä, ja
+siitä se sitten lähti. Projektin nimeksi jäikin ExperimentalPlayer, mutta eipä se haittaa. Ensimmäinen versio oli Alpha 1, joka pystyi
+jo soittamaan biisejä, playlistikin oli. Hitaasti ominaisuuksia lisäten pääsin lopulta Alpha 5:stä Beta 1:een. Beta 1:ssä toimi repeat jo.
+Se oli yksi ominaisuus, jonka toimintaan saaminen kesti kauiten (johtuen siitä perhanan WMP-kontrollista). Sitten taas bugeja metsästäen, ja 
+lisää ominaisuuksia luoden, siirryin versionumeroissa ylöspäin. Lopulta osuin Beta 5:een, ja tiesin, että seuraavan kerran jos päivitän 
+versionumeroa, se on sitten 1.0. Beta 5 oli varmaan kauiten työn alla. Bugeja oli PALJON, ja poistaminen vaivalloista. Mutta kova työ 
+kannatti, kun lopulta sain kaiken vakaaksi.
+
+
+/*TEHTY
+Tähän väliin pitää sanoa, kyllä voisin tehdä sen niin että se muistaisi jokaikisen biisin PL:ssä. Mutta tämä olisi mielestäni resurssien 
+tuhlausta. Plus tietenkin pitäisi ottaa huomioon ne, joilla on valtavasti mp3:ia (1000+). Joten mikäs senkin taulukon kooksi pitäisi laittaa? 
+65536? Jos tietäisin, että ihmiset käyttäisivät sitä vain alle 100:n biisin kuunteluun, niin mikäs siinä. Mutta kun tuokin raja saattaisi 
+jollain tulla vastaan. En vain tykkää varastoida dataa, jonka kokoa en tiedä ennalta.
+*/TEHTY
+
+/*Tallennetaan nykyään omiin tiedostoihin yleisten ongelmien takia
+Jooh, elikkäs viime PL tallennetaan ohjelman kansioon "savedPL.jpl"-tiedostoon. Olisihan pitänyt tätä ajatella, kehittää nyt oma playlist-
+tiedosto eikä tajua tälläistä :D
+Eihän se settingissä olisi oikein toiminutkaan hyvin. Omasta mielestäni tämä on hyvä tapa. Tietenkin käyttäjä voi korvata latautuvan listan
+käsin.
+*/
+
+Tulipas taas koodari-olo. En löytänyt ohjelman ikonia mistään ihan tiedostona, ilmeisesti poistettu.
+Mutta ohjelma käytti sitä vielä. Mietin siinä sitten hetken, kunnes tajusin että sehän on tallennettuna bittikarttana formiin. Noh, sitten
+nappasin sen muuttujaan ja tallensin työpöydälle. On vaan semmonen tunne, että kai tämän olisi voinut helpomminkin tehdä.
+
+Heh, tuo uusi "latausruutu" on oikeestaan aika kätevä. Eihän se sinällään mitään tee, timerissa se vaan on kiinni. Mutta koska siinä menee
+hetki kun WMP latautuu, niin tämä on helpoin tapa.
+
+Poistettu latausruutu ärsyttävyyden takia + en saanut formia piiloon / toimimattomaksi.
+
+Noniin, taitaa 1.3 lähestyä. Nyt lisäsin sellaisen ominaisuuden, että jpl-tiedostot voi käynnistää JPlayerillä, jolloin kyseinen pl avataan
+automaattisesti. Lisäksi nykyään viimeksi olleet biisit tallennetaan kansioon: Omat tiedostot\Jplayer playlist data\savedPL.jpl.
+Katsotaan jos jossain vaiheessa lisään mp3-tiedostojen avausmahdollisuuden. Hamassa tulevaisuudessa ehkä lisään tiedostojen lisäämisen pl:ään
+@runtime. Tämä tuntuu tosin todella epätodelliselta tehtäväksi VB:llä, joten saapas nähdä.
+
+1.3 on täällä! Ja isoin uudistus on näkyvin kaikista, käyttöliittymä on sunniteltu kokonaan uudestaan edellisen oltua liian kömpelö.
+Lisäksi värimoodi on poistettu.
+
+Siis ei hitto, onneks selvisin viime illasta. Sekoilin vaan ihan "vähän" resurssien kanssa, ja PAM puolet jutuista korruptoitui. Jouduin
+rakentamaan sen puolikkaan uudestaan. Onneksi ongelmat rajoittuivat designerin puolelle, koodi säilyi ehjänä. /endrant
+
+Ja hientäyteisen päivän jälkeen taas melkoisella vauhdilla on ohjelman kehitys jatkunut. Tuo soittolistan piilotuskin oli kaverin idea, kiitos
+siitä hänelle. Kiitos tietenkin myös romanialaiselle ystävälleni joka auttoi uuden käyttöliittymän kanssa. Mainioita lisäyksiä olen kyllä nyt
+lähiaikoina saanut tähän tehtyä, kuten .jpl-tiedostojen suora avausmahdollisuus.
+
+Mutta yhtä juttua en kyllä tajua, miksi ihmeessä nuo ikonikuvat eivät toimi resursseissa mutta toimivat suoralla linkityksellä? Voi tietenkin
+olla että resurssit eivät tue PNG-muotoisia kuvia, mikä olisi kylläkin ihan hiton tyhmää. Kunnes sitten joskus taas viitsin ruveta sähläämään
+resurssien kanssa, niin tämä versio ei ole julkaisukelpoinen.
+
+Suomenkielinen bloggaus ja kehittäjän muistio loppuu nyt tähän, teen SourceForgeen sivun tälle, ja teen koko ohjelmasta englanninkielisen,
+edessä on melkoinen urakka, mutta olen varma että saan suurimman osan työstä tehtyä tämän illa/yön aikana.
+***************BLOGI**************/
+
+
+Tällä hetkellä kehityksessä:
+- Prev/Next track sekä Play/Pause-napin toimimaan saaminen näppiksestä (D.I.C pystyy varmaan tässä auttamaan)
+Elikkä näyttää vähän siltä, että jostain perhanan syystä nämä napit eivät vain toimi nyt tässä näppiksessä (Ne eivät toimi edes Winampissa).
+
+
+Ohjelman muistamia asetuksia:
+- repeat
+- shuffle
+- biisilista
+
+
+(En todellakaan tässä vaiheessa muista mitä muutoksia Alphassa ja Betassa tein, joten tämä alkaa 1.0:sta)
+(Tässä en myöskään mainitse siivoamiani kohtia, koska siivoan koodia koko ajan)
+Changelog:
+
+
+
+1.3:
+- Lista tallennetaan aina siitä huolimatta tallennetaanko se
+- Korjattu bugi, joka tapahtui kun soiva biisi poistetaan PL:stä
+- Vaihdettu Stop-napin teksti "Pysäytä" (Miksiköhän en ollu tätä huomannu? Koko muu ohjelma suomeksi ja sitten yksi nappi on englanniksi :D)
+- Nyt playlistissä voi valita monta biisiä ja liikuttaa montaa samaan aikaan. Jos painat toista-nappia kun monta on valittuna, ylin toistetaan
+- Biisejä voi nyt poistaa monta saman aikaisesti
+- JPL-tiedostot voi nyt avata suoraan ohjelmassa valitsemalla niiden oletusohjelmaksi tämän ohjelman
+- TOTAALISEN uudelleen suunniteltu käyttöliittymä!
+	* Tylsät napit korvattu tyylikkäämmillä ikoneilla
+	* Soittimesta saatiin tällä muutoksella huomattavasti pienempi
+	* Värimoodit poistettu, vain tumma käytössä
+- Help päivitetään 1.4:ssa
+- Soittolistan voi nyt piilottaa
+
+1.2:
+- Korjattu bugeja liittyen uuden tyyliseen playlistiin
+- Lisätty biisien siirto näppäimistöllä, ylös F1:llä, alas F2:lla (Tästä oli tosi vaikea saada yhden napin toiminto kun playlist itsessään 
+käyttää melkein kaikkia)
+- Mahdollisuus pienentää JPlayer ikoniksi (Soittimen voi palauttaa tuplaklikkaamalla tai hiiren oikean napin valikosta)
+- Ikonissa näkyy tällä hetkellä soiva biisi, kohta jossa ollaan, sekä kokonaiskesto
+- PL:ää ladattaessa tarkistetaan ovatko biisit olemassa (Periaatteessahan sama pitäisi lisätä jokaiseen kohta jossa vaihdetaan biisiä, mutta 
+en usko ihmisten niin tyhmiä olevan...)
+- Uusi ikoni (Vähän parempi kuin aikaisempi kannettavan touchpädillä piirtämäni)
+- Jos käynnistyksessä latautuu PL, kaikki tiedostot tarkistetaan, ovatko ne olemassa.
+- Lisätty "Tee siirreltävä lista"-painike kontekstivalikkoon. Tämä tallentaa PL:ään vain tiedostonimet, jolloin esim. mp3-soittimelta käyttö 
+on helppoa. (Tietenkin kaikkien biisien pitää olla samassa kansiossa PL:n kanssa)
+- Lisätty tietoa JPlayeristä-nappi. Tehty myös logo siihen formiin.
+
+1.1:
+- Playlist näyttää pelkän tiedostonimen, ei koko polkua
+- Kansion lisääminen (Kaikkien kansiossa olevien .mp3 tiedostojen lisäys)
+- Poistettu biisin poiston varmistus (Oli turhan vaivalloista)
+
+1.0:
+Ensimmäinen julkaisuversio, ominaisuuksia:
+
+- .jpl soittolistat
+- repeat
+- shuffle
+- soittolista (täysin muokattavissa, biisejä voi siirtää, poistaa ja lisätä(d'oh))
+- biisin kelaus trackbarilla
+- 2 teemaa, tumma ja tavallinen
+- Biisin vaihtuessa automaattisesti, ohjelma ilmoittaa uudesta biisistä pikku NotifyIconilla
+- Paljon pikkuominaisuuksia mitä ei jaksa luetella

@@ -1,0 +1,17 @@
+- context menu - OK!
+- shuffle - OK!
+- Siirto soitettavan kappaleen l‰pi-bugi - OK!
+- l‰j‰ muita bugeja taas hoidettu..., siis: OK!
+
+- Ohje -OK!, pit‰‰ p‰ivitt‰‰ kun ominaisuuksia lis‰t‰‰n
+- bugi: jos poistaa biisin listalta soitettavan biisin ollessa alapuolella, se hypp‰‰ yhden biisin, yli. Lis‰ksi, jos shuffle on p‰‰ll‰, saattaa soittaa saman biisin. Korjaus: currentPlaying:n p‰ivitys poiston yhteydess‰. KORJATTU!
+
+- biisin vaihtuessa tooltip, uudesta biisist‰ - OK!
+- Form1.Text:n vaihto muotoon <soitettava biisi> - JPlayer <versionno> - OK!
+- repeat-toiminto(toistotila), Repeat one, Repeat All - OK!
+
+JPlayer 1.0 julkaistu!
+
+
+
+- Biisien kestot PL:‰‰n. T‰m‰ tod. n‰k. ei koskaan toteudu, koska ListBox:ssa ei t‰mmˆisi‰ kovin helposti k‰sitell‰. Tai sitten en vaan osaa.

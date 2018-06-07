@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JPlayer
+</name>
+</assembly>
+<members>
+<member name="M:ExperimentalPlayer.Form1.pl_Add">
+	<summary>
+ Sub for adding songs to the PL
+ </summary>
+</member><member name="M:ExperimentalPlayer.Form1.pl_Delete">
+	<summary>
+ Sub for removing songs from the PL
+ </summary>
+</member><member name="M:ExperimentalPlayer.Form1.Delay(System.Int32)">
+	<summary>
+ Puts the thread to sleep for a set time
+ </summary>
+	<param name="delay">Delay in milliseconds</param>
+</member><member name="M:ExperimentalPlayer.Form1.updatePlayer">
+	<summary>
+ Updates the total duration and songname labels (With a 500ms delay)
+ </summary>
+</member><member name="M:ExperimentalPlayer.Form1.GUIMode(System.String)">
+	<summary>
+ Changes the GUI mode to the desired one
+ </summary>
+	<param name="Mode">The mode to switch to (Play, Pause or Stop)</param>
+</member><member name="M:ExperimentalPlayer.Form1.GoPrevious">
+	<summary>
+ Jumps to the previous song
+ </summary>
+</member><member name="M:ExperimentalPlayer.Form1.GoNext">
+	<summary>
+ Jumps to the next song
+ </summary>
+</member><member name="P:ExperimentalPlayer.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ExperimentalPlayer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:ExperimentalPlayer.My.Resources.Resources.jplayer_help">
+	<summary>
+  Looks up a localized string similar to {\rtf1\ansi\ansicpg1252\deff0\deflang1035{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Microsoft Sans Serif;}{\f2\fnil Microsoft Sans Serif;}}
+\viewkind4\uc1\pard\ul\fs53 Welcome to using JPlayer!\fs41\par
+\par
+\f1\fs48 Info about the main screen\fs26\par
+\ulnone\fs20\par
+\ul\fs41 Upper part:\ulnone\fs20\par
+\par
+- Song info (current position, total duration, name)\par
+- Trackbar for the purpose of skipping to a certain spot (it also shows the current position)\par
+- Volume adjustment bar [rest of string was truncated]";.
+</summary>
+</member><member name="P:ExperimentalPlayer.My.Resources.Resources.JPlayer_todo">
+	<summary>
+  Looks up a localized string similar to - context menu - OK!
+- shuffle - OK!
+- Siirto soitettavan kappaleen läpi-bugi - OK!
+- läjä muita bugeja taas hoidettu..., siis: OK!
+
+- Ohje -OK!, pitää päivittää kun ominaisuuksia lisätään
+- bugi: jos poistaa biisin listalta soitettavan biisin ollessa alapuolella, se hyppää yhden biisin, yli. Lisäksi, jos shuffle on päällä, saattaa soittaa saman biisin. Korjaus: currentPlaying:n päivitys poiston yhteydessä. KORJATTU!
+
+- biisin vaihtuessa tooltip, uudesta biisistä - OK!
+- Form1.Text:n vaihto muotoon [rest of string was truncated]";.
+</summary>
+</member><member name="T:ExperimentalPlayer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
